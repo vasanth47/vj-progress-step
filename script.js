@@ -35,9 +35,9 @@ function update() {
     });
 
     const actives = document.querySelectorAll('.active');
-    const lengthActive =
+    const progressBar =
         ((actives.length - 1) / (circles.length - 1)) * 100 + '%';
-    progress.style.width = lengthActive;
+    progress.style.width = progressBar;
 
     if (currentActive === 1) {
         prev.disabled = true;
